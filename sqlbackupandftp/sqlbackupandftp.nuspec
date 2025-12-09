@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    
+    <id>sqlbackupandftp</id>
+    <version>12.7.35</version>
+    <title>SQL Backup And FTP</title>
+    <authors>Pranas.NET</authors>
+    <owners>Lindson França</owners>
+
+    
+    <projectUrl>https://sqlbackupandftp.com</projectUrl>
+    <licenseUrl>https://sqlbackupandftp.com/home/eula</licenseUrl>
+    <iconUrl>https://sqlbackupandftp.com/images/logo.png</iconUrl>
+
+    
+    <summary>SQLBackupAndFTP é uma ferramenta simples para backup, compressão e envio de bancos SQL Server, MySQL e PostgreSQL.</summary>
+    <description>
+      SQLBackupAndFTP é um utilitário popular para backup de bancos de dados SQL Server, MySQL e PostgreSQL.
+      Ele permite agendar backups, compactar, criptografar e enviar para FTP, Dropbox, Google Drive, OneDrive, Amazon S3 e outros.
+      Este pacote instala a versão mais recente de forma silenciosa.
+    </description>
+    <tags>sql backup ftp mysql postgresql server database sqlbackupandftp</tags>
+
+    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+
+  <files>    
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
