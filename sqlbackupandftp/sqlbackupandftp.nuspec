@@ -6,24 +6,30 @@
     <version>12.7.35</version>
     <title>SQL Backup And FTP</title>
     <authors>Pranas.NET</authors>
-    <owners>Lindson França</owners>
+    <owners>L1NDS0N</owners>
 
     
     <projectUrl>https://sqlbackupandftp.com</projectUrl>
-    <licenseUrl>https://sqlbackupandftp.com/home/eula</licenseUrl>
-    <iconUrl>https://sqlbackupandftp.com/images/logo.png</iconUrl>
+    <licenseUrl>https://sqlbackupandftp.com/terms</licenseUrl>
+    <iconUrl>https://sqlbackupandftp.com/Content/img/SbfLogo80.png</iconUrl>
+    <packageSourceUrl>https://github.com/L1NDS0N/chocolatey/tree/main/sqlbackupandftp</packageSourceUrl>
+    <releaseNotes>https://sqlbackupandftp.com/blog/</releaseNotes>
 
     
-    <summary>SQLBackupAndFTP é uma ferramenta simples para backup, compressão e envio de bancos SQL Server, MySQL e PostgreSQL.</summary>
+    <summary>SQLBackupAndFTP is a simple tool for backing up, compressing, and sending SQL Server, MySQL, and PostgreSQL databases.</summary>
     <description>
-      SQLBackupAndFTP é um utilitário popular para backup de bancos de dados SQL Server, MySQL e PostgreSQL.
-      Ele permite agendar backups, compactar, criptografar e enviar para FTP, Dropbox, Google Drive, OneDrive, Amazon S3 e outros.
-      Este pacote instala a versão mais recente de forma silenciosa.
+      SQLBackupAndFTP is a popular utility for backing up SQL Server, MySQL, and PostgreSQL databases.
+      It allows scheduling backups, compressing, encrypting, and sending them to FTP, Dropbox, Google Drive, OneDrive, Amazon S3, and others.
+      This package installs the latest version silently.
     </description>
     <tags>sql backup ftp mysql postgresql server database sqlbackupandftp</tags>
 
     
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <docsUrl>https://sqlbackupandftp.com/docs/</docsUrl>
+    <mailingListUrl>https://community.sqlbackupandftp.com/</mailingListUrl>
+    <bugTrackerUrl>https://sqlbackupandftp.com/home/support</bugTrackerUrl>
   </metadata>
 
   <files>    

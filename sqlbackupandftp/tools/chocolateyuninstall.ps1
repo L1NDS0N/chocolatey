@@ -1,11 +1,20 @@
-$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop'
 
 $packageName = 'sqlbackupandftp'
-$installerType = 'exe'
-$silentArgs = '/S'
-$validExitCodes = @(0)
+$softwareName = 'SQL Backup and FTP*'
 
-Uninstall-ChocolateyPackage -PackageName $packageName `
-                            -FileType $installerType `
-                            -SilentArgs $silentArgs `
-                            -ValidExitCodes $validExitCodes
+$uninstallKey = Get-UninstallRegistryKey -SoftwareName $softwareName
+
+if ($uninstallKey) {
+    $file = "$($uninstallKey.UninstallString)"
+    
+    if ($file) {
+        Uninstall-ChocolateyPackage -PackageName $packageName `
+                                    -FileType 'EXE' `
+                                    -SilentArgs "/S" `
+                                    -File "$file" `
+                                    -ValidExitCodes @(0)
+    }
+}
+
+Write-Warning "$packageName uninstall completed or software not found."
